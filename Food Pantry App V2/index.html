@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Food Pantry App</title>
+	<!--The <link> element links to an external stylesheet-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--the main container for the app-->
+	<div class="app">
+		<div class="screen main-screen">
+			<!--displays the app logo-->
+			<div class="logo">
+				Food Pantry App
+			</div>
+			<!--Displays the search bar-->
+    		<div class="search-container">
+  				<input type="text" placeholder="Search categories..." class="search-input">
+  				<button class="search-btn">Search</button>
+			</div>
+			<!--Displays the recipe categories-->
+			<div class="categories"></div>
+			<div class="recipe-list"></div>
+		</div>
+		<div class="screen recipe-screen hidden">
+			<div class="back-btn">&lt;</div>
+			<div class="thumbnail">
+				<img>
+			</div>
+			<!--Displays the recipe details-->
+			<div class="details">
+				<h2></h2>
+				<div>
+					<h4>Ingredients</h4>
+					<ul></ul>
+				</div>
+				<div>
+					<h4>Instructios</h4>
+					<ol></ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--links to an external JavaScript file (code.js)-->
+	<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
